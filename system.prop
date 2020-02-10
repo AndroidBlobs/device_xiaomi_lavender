@@ -1,4 +1,3 @@
-
 #
 # from device/xiaomi/lavender/system.prop
 #
@@ -7,7 +6,7 @@
 #
 
 #rild.libpath=/system/lib/libreference-ril.so
-rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so
+rild.libpath=/system/vendor/lib64/libril-qc-hal-qmi.so
 #rild.libargs=-d /dev/smd0
 persist.rild.nitz_plmn=
 persist.rild.nitz_long_ons_0=
@@ -24,7 +23,7 @@ DEVICE_PROVISIONED=1
 #
 # Set network mode to (T/L/G/W/1X/EVDO, T/G/W/L) for 7+5 mode device on DSDS mode
 #
-ro.telephony.default_network=22,20
+ro.telephony.default_network=9,9
 
 debug.sf.enable_hwc_vds=1
 debug.sf.hw=1
@@ -39,7 +38,6 @@ persist.demo.hdmirotationlock=false
 #Disable Skip Validate
 sdm.debug.disable_skip_validate=1
 ro.colorpick_adjust=true
-
 #Property to enable display default color mode
 vendor.display.enable_default_color_mode=0
 
@@ -76,11 +74,10 @@ persist.mm.enable.prefetch=true
 #property to enable narrow search range for video encoding
 vidc.enc.target_support_bframe=1
 vendor.vidc.enc.disable_bframes=1
-#jixucheng modify to fix videodecoder GTS/CTS fail.
 vendor.vidc.dec.enable.downscalar=0
 
-# disable PQ feature by default
-vendor.vidc.enc.disable.pq=true
+# enable PQ feature by default
+vendor.vidc.enc.disable.pq=false
 
 # Additional buffers shared between Camera and Video
 vidc.enc.dcvs.extra-buff-count=2
@@ -108,7 +105,6 @@ ro.vendor.display.cabl=0
 ro.vendor.display.ad=1
 ro.vendor.display.ad.sdr_calib_data=/data/vendor/display/ad_calib.cfg
 ro.vendor.display.sensortype=2
-
 #
 # System props for telephony
 # System prop to turn on CdmaLTEPhone always
@@ -161,6 +157,13 @@ persist.sys.wfd.virtual=0
 # system prop for NFC DT
 ro.nfc.port=I2C
 
+#property for vendor specific library
+ro.vendor.at_library=libqti-at.so
+
+#min/max cpu in core control
+ro.vendor.qti.core_ctl_min_cpu=2
+ro.vendor.qti.core_ctl_max_cpu=4
+
 #hwui properties
 ro.hwui.texture_cache_size=72
 ro.hwui.layer_cache_size=48
@@ -180,9 +183,12 @@ persist.vendor.radio.atfwd.start=true
 #property to enable VDS WFD solution
 persist.hwc.enable_vds=1
 
+#Increase cached app limit
+#ro.vendor.qti.sys.fw.bg_apps_limit=60
+
 #Settings to enable sensors
 #Device Orientation sensor
-ro.vendor.sensors.dev_ori=fasle
+ro.vendor.sensors.dev_ori=false
 #Persistent Motion Detector
 ro.vendor.sensors.pmd=true
 #Stationary Detector
@@ -195,6 +201,9 @@ ro.vendor.sensors.pug = true
 #Expose aux camera for below packages
 camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,com.longcheertel.cit
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,com.longcheertel.cit
+
+# enable b-services aging propagation
+ro.vendor.qti.sys.fw.bservice_enable=true
 
 #disable UBWC for camera
 persist.vendor.camera.preview.ubwc=0
@@ -223,6 +232,7 @@ vendor.bluetooth.soc=cherokee
 ro.bluetooth.library_name=libbluetooth_qti.so
 persist.vendor.btstack.enable.splita2dp=true
 persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac
+persist.vendor.btstack.avrcp-playstatus.blacklist=true
 
 # Property for backup NTP Server
 persist.backup.ntpServer="0.pool.ntp.org"
@@ -234,6 +244,21 @@ persist.sys.camera.camera2=true
 
 #disable awb sync in bokeh mode
 persist.vendor.camera.awb.sync=2
+
+#lct.ydt 20180911 add for voWIFI
+#iwaln vowifi corresponding
+persist.vendor.data.iwlan.enable=true
+
+#HTH-30190 connect wifi, set 3G pre,observe Mobile network type should display UMTS but IWLAN.
+persist.vendor.radio.data_con_rprt=1
+
+#lct.ydt 20180911 add for ignore OOS 5 seconds
+persist.vendor.radio.snapshot_enabled=1
+persist.vendor.radio.snapshot_timer=5
+persist.radio.sib16_support=1
+
+#lct liuxuan add the dom ignore time
+persist.vendor.radio.ignore_dom_time=15
 
 #add for color invert
 ro.vendor.df.effect.conflict=1
@@ -247,17 +272,11 @@ sys.boe_td4320_length=42
 sys.shenchao_nt36672a_offset=-10
 sys.shenchao_nt36672a_length=38
 
-#enable temp dds
-persist.vendor.radio.enable_temp_dds=true
-
-# enable b-services aging propagation
-ro.vendor.qti.sys.fw.bservice_enable=true
+#enable all system restart_level to relative
+persist.vendor.ssr.restart_level=ALL_ENABLE
 
 #thermal configs path
-sys.thermal.data.path=/data/thermal/
+sys.thermal.data.path=/data/vendor/thermal/
 
-#enable ssr for nv check by jianglei 20181220
-persist.sys.ssr.restart_level=ALL_ENABLE
-# end of device/xiaomi/lavender/system.prop
 
 #
