@@ -2787,7 +2787,6 @@ vendor/lib/libGPQTEEC_vendor.so
 vendor/lib/libGPreqcancel.so
 vendor/lib/libGPreqcancel_svc.so
 vendor/lib/libGPTEE_vendor.so
-vendor/lib/liboemcrypto.so
 vendor/lib/libqisl.so
 vendor/lib/libQSEEComAPI.so
 vendor/lib/librmp.so
@@ -2807,7 +2806,6 @@ vendor/lib64/libGPQTEEC_vendor.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libGPTEE_vendor.so
-vendor/lib64/liboemcrypto.so
 vendor/lib64/libqisl.so
 vendor/lib64/libQSEEComAPI.so
 vendor/lib64/librmp.so
@@ -3980,8 +3978,9 @@ vendor/bin/vsimd
 vendor/bin/wdsdaemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
--vendor/data-app/Miui_Fashiongallery_global_new/Miui_Fashiongallery_global_new.apk
--vendor/data-app/wps_lite/wps_lite.apk
+-vendor/data-app/aiasst_service/aiasst_service.apk
+-vendor/data-app/CloudSim/CloudSim.apk
+-vendor/data-app/wps-lite/wps-lite.apk
 vendor/etc/cit1.xml
 vendor/etc/cit2.xml
 vendor/etc/cit2_GCF.xml
@@ -4011,7 +4010,6 @@ vendor/lib/libsi.so
 vendor/lib/libsonivox.so
 vendor/lib/libteeclientjni.so
 vendor/lib/libwapi_cert.so
-vendor/lib/libwvkeybox.so
 vendor/lib/miwatermark.so
 vendor/lib64/libcert_parse.wpa_s.so
 vendor/lib64/libdiagjni.so
@@ -4022,4 +4020,3 @@ vendor/lib64/libpcap.so
 vendor/lib64/libsi.so
 vendor/lib64/libteeclientjni.so
 vendor/lib64/libwapi_cert.so
-vendor/lib64/libwvkeybox.so
