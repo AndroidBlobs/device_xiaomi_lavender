@@ -47,6 +47,7 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     ro.vendor.audio.soundtrigger.lowpower=false \
     ro.vendor.audio.soundtrigger=none \
     ro.vendor.audio.voice.volume.boost=manual \
+    ro.vendor.build.fingerprint=xiaomi/lavender_eea/lavender:9/PKQ1.180904.001/V11.0.4.0.PFGEUXM:user/release-keys \
     ro.vendor.extension_library=libqti-perfd-client.so \
     ro.vendor.sdk.sensors.gestures=false \
     ro.vendor.sensors.cmc=false \
