@@ -96,8 +96,9 @@
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
     </carrier_config>
-    <carrier_config mcc="730" mnc="1">
+    <carrier_config cust_region="cl_en" mcc="730" mnc="1">
         <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="730" mnc="9">
         <boolean name="carrier_volte_available_bool" value="true" />

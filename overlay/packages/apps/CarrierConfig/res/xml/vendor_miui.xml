@@ -143,6 +143,7 @@
     <carrier_config mcc="234" mnc="20">
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="carrier_5g_switch_available_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="232" mnc="05,10,14">
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
@@ -195,6 +196,9 @@
     <carrier_config cust_region="es_vodafone" mcc="262" mnc="02,09">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="hide_wfc_mode_option" value="true" />
+    </carrier_config>
+    <carrier_config mcc="262" mnc="03,07">
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
     </carrier_config>
     <carrier_config mcc="216" mnc="70">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
@@ -704,6 +708,9 @@
     </carrier_config>
     <carrier_config mcc="242" mnc="14">
         <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="250" mnc="2">
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
     </carrier_config>
     <carrier_config mcc="284" mnc="5">
         <boolean name="config_support_callbarring_over_ims" value="false" />

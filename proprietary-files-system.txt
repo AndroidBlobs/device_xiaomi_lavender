@@ -15,7 +15,11 @@
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 bin/iwpriv
 bin/wfdservice
+etc/cne/Nexus/ATT/ATT_profiles.xml
+etc/cne/Nexus/ROW/ROW_profiles.xml
+etc/cne/Nexus/VZW/VZW_profiles.xml
 etc/init/wfdservice.rc
+etc/perf/wlc_model.tflite
 etc/permissions/audiosphere.xml
 etc/permissions/com.qti.location.sdk.xml
 etc/permissions/com.qualcomm.location.xml
@@ -53,6 +57,9 @@ lib/libmmosal.so
 lib/libmmparser_lite.so
 lib/libmmrtpdecoder.so
 lib/libmmrtpencoder.so
+lib/libqti-perfd-client_system.so
+lib/libqti-util_system.so
+lib/libqti_performance.so
 lib/libwfdavenhancements.so
 lib/libwfdclient.so
 lib/libwfdcodecv4l2.so
@@ -82,6 +89,9 @@ lib64/libmmosal.so
 lib64/libmmparser_lite.so
 lib64/libmmrtpdecoder.so
 lib64/libmmrtpencoder.so
+lib64/libqti-perfd-client_system.so
+lib64/libqti-util_system.so
+lib64/libqti_performance.so
 lib64/libseemore.so
 lib64/libwfdclient.so
 lib64/libwfdnative.so
@@ -101,6 +111,8 @@ product/etc/permissions/qcrilhook.xml
 product/etc/permissions/qti_telephony_hidl_wrapper.xml
 product/etc/permissions/qti_telephony_utils.xml
 product/etc/permissions/telephonyservice.xml
+product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
+product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml
 product/framework/QtiTelephonyServicelibrary.jar
 product/framework/com.qti.dpmframework.jar
 product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
@@ -119,6 +131,8 @@ product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar
 product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
 product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar
 product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
+product/framework/vendor.qti.hardware.factory-V1.0-java.jar
+product/framework/vendor.qti.hardware.factory-V1.1-java.jar
 product/framework/vendor.qti.hardware.soter-V1.0-java.jar
 product/framework/vendor.qti.ims.callinfo-V1.0-java.jar
 product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
@@ -147,6 +161,8 @@ product/lib/vendor.display.color@1.0.so
 product/lib/vendor.display.color@1.1.so
 product/lib/vendor.display.color@1.2.so
 product/lib/vendor.display.postproc@1.0.so
+product/lib/vendor.qti.data.factory@1.0.so
+product/lib/vendor.qti.data.factory@2.0.so
 product/lib/vendor.qti.esepowermanager@1.0.so
 product/lib/vendor.qti.gnss@1.0.so
 product/lib/vendor.qti.gnss@1.1.so
@@ -159,6 +175,10 @@ product/lib/vendor.qti.hardware.data.connection@1.1.so
 product/lib/vendor.qti.hardware.data.dynamicdds@1.0.so
 product/lib/vendor.qti.hardware.data.iwlan@1.0.so
 product/lib/vendor.qti.hardware.data.latency@1.0.so
+product/lib/vendor.qti.hardware.factory@1.0.so
+product/lib/vendor.qti.hardware.factory@1.1.so
+product/lib/vendor.qti.hardware.perf@1.0.so
+product/lib/vendor.qti.hardware.perf@2.0.so
 product/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
 product/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
 product/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
@@ -192,6 +212,8 @@ product/lib64/vendor.display.color@1.0.so
 product/lib64/vendor.display.color@1.1.so
 product/lib64/vendor.display.color@1.2.so
 product/lib64/vendor.display.postproc@1.0.so
+product/lib64/vendor.qti.data.factory@1.0.so
+product/lib64/vendor.qti.data.factory@2.0.so
 product/lib64/vendor.qti.esepowermanager@1.0.so
 product/lib64/vendor.qti.gnss@1.0.so
 product/lib64/vendor.qti.gnss@1.1.so
@@ -204,6 +226,10 @@ product/lib64/vendor.qti.hardware.data.connection@1.1.so
 product/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
 product/lib64/vendor.qti.hardware.data.iwlan@1.0.so
 product/lib64/vendor.qti.hardware.data.latency@1.0.so
+product/lib64/vendor.qti.hardware.factory@1.0.so
+product/lib64/vendor.qti.hardware.factory@1.1.so
+product/lib64/vendor.qti.hardware.perf@1.0.so
+product/lib64/vendor.qti.hardware.perf@2.0.so
 product/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
 product/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
 product/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so

@@ -133,5 +133,6 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     vendor.hw.fm.init=0 \
     vendor.power.pasr.enabled=true \
     vendor.qcom.bluetooth.soc=cherokee \
+    vendor.vidc.enc.disable.pq=true \
     vendor.video.disable.ubwc=1 \
     vendor.voice.path.for.pcm.voip=true \
