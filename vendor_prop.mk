@@ -36,7 +36,6 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     ro.config.alarm_alert=Alarm_Classic.ogg \
     ro.config.notification_sound=pixiedust.ogg \
     ro.config.ringtone=Ring_Synth_04.ogg \
-    ro.control_privapp_permissions=log \
     ro.dalvik.vm.native.bridge=0 \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp \
     ro.hardware.nfc_nci=nqx.default \
